@@ -1,664 +1,0 @@
-
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شرکت تجهیزات سازه و ایمنی ایمن پایا</title>
-    <meta name="description" content="شرکت ایمن پایا مجری پایه یک نظام مهندسی و کنترل ساختمان استان تهران">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
-        
-        .font-vazir { font-family: 'Vazirmatn', sans-serif; }
-        .font-inter { font-family: 'Inter', sans-serif; }
-        
-        [dir="rtl"] { text-align: right; }
-        [dir="ltr"] { text-align: left; }
-        
-        .hero-bg {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.6s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .nav-link {
-            position: relative;
-            transition: color 0.3s ease;
-        }
-        
-        .nav-link:hover {
-            color: #3b82f6;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 50%;
-            background-color: #3b82f6;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-            left: 0;
-        }
-        
-        .service-icon {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-        }
-    </style>
-</head>
-<body class="font-vazir bg-gray-50" dir="rtl">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold text-lg">ایپ</span>
-                        </div>
-                    </div>
-                    <div class="mr-4">
-                        <h1 class="text-xl font-semibold text-gray-900">ایمن پایا</h1>
-                    </div>
-                </div>
-                
-                <div class="hidden md:block">
-                    <div class="flex items-baseline space-x-4 space-x-reverse">
-                        <a href="#home" class="nav-link text-gray-900 px-3 py-2 text-sm font-medium">خانه</a>
-                        <a href="#about" class="nav-link text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">درباره ما</a>
-                        <a href="#team" class="nav-link text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">مدیران</a>
-                        <a href="#portfolio" class="nav-link text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">سوابق کاری</a>
-                        <a href="#services" class="nav-link text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">خدمات</a>
-                        <a href="#regulations" class="nav-link text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">مقررات</a>
-                        <a href="#contact" class="nav-link text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">تماس</a>
-                    </div>
-                </div>
-                
-                <div class="flex items-center space-x-2 space-x-reverse">
-                    <select id="languageSelector" class="bg-gray-100 border border-gray-300 rounded-md px-3 py-1 text-sm">
-                        <option value="fa">فارسی</option>
-                        <option value="en">English</option>
-                        <option value="es">Español</option>
-                        <option value="ar">العربية</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-bg text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center fade-in">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    شرکت تجهیزات سازه و ایمنی<br>
-                    <span class="text-blue-200">ایمن پایا</span>
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-                    ارائه دهنده تجهیزات ایمنی و راه‌حل‌های سازه‌ای پیشرفته در صنعت ساختمان
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#services" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300">
-                        مشاهده خدمات
-                    </a>
-                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
-                        تماس با ما
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">درباره ما</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">شرکت تجهیزات سازه و ایمنی ایمن پایا</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        شرکت ایمن پایا از سال ۱۳۹۵ با هدف ارائه راه‌حل‌های نوین در صنعت ساختمان فعالیت خود را آغاز کرده است. ما با تکیه بر دانش فنی روز و استفاده از تکنولوژی‌های پیشرفته، خدمات جامعی در زمینه ساخت، تأمین، نصب و راه‌اندازی ساختمان ارائه می‌دهیم.
-                    </p>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        تیم متخصص ما متشکل از مهندسان مجرب در حوزه‌های مختلف عمران، معماری و ایمنی ، ترافیک است که با بهره‌گیری از استانداردهای بین‌المللی، بهترین راه‌حل‌ها را برای پروژه‌های شما ارائه می‌دهند.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <div class="bg-blue-50 px-4 py-2 rounded-lg">
-                            <span class="text-blue-600 font-semibold">سال تأسیس: 1386</span>
-                        </div>
-                        <div class="bg-green-50 px-4 py-2 rounded-lg">
-                            <span class="text-green-600 font-semibold">پروژه‌های موفق: +۲۰۰</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-blue-600 h-48 rounded-lg flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <div class="text-4xl mb-2">🏗️</div>
-                            <p class="font-semibold">تجهیزات سازه‌ای</p>
-                        </div>
-                    </div>
-                    <div class="bg-green-600 h-48 rounded-lg flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <div class="text-4xl mb-2">🦺</div>
-                            <p class="font-semibold">ایمنی صنعتی</p>
-                        </div>
-                    </div>
-                    <div class="bg-orange-600 h-48 rounded-lg flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <div class="text-4xl mb-2">🔧</div>
-                            <p class="font-semibold">نصب و راه‌اندازی</p>
-                        </div>
-                    </div>
-                    <div class="bg-purple-600 h-48 rounded-lg flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <div class="text-4xl mb-2">📋</div>
-                            <p class="font-semibold">مشاوره تخصصی</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">مدیران شرکت</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                    <div class="h-64 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                            <span class="text-2xl">👨💼</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">مهندس امیر روحی</h3>
-                        <p class="text-blue-600 font-medium mb-3">مدیر عامل</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            مهندس عمران با بیش از ۱۵ سال تجربه در حوزه مدیریت پروژه‌های بزرگ ساختمانی و ترافیکی
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                    <div class="h-64 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
-                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                            <span class="text-2xl">👩💼</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">مهندس کامران راد پویا </h3>
-                        <p class="text-green-600 font-medium mb-3">رئیس هیات مدیره</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            متخصص صنعتی سازی و مهندس عمران با تخصص در طراحی و اجرای سیستم‌های ریلی پیشرفته
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                    <div class="h-64 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
-                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                            <span class="text-2xl">👨💼</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">مهندس محمد محمدی نژاد</h3>
-                        <p class="text-purple-600 font-medium mb-3">عضو ونائب رئیس هیات مدیره</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            متخصص بازاریابی و فروش با شبکه گسترده ارتباطات در صنعت ساختمان
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">سوابق کاری</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <div class="text-4xl mb-2">🏢</div>
-                            <p class="font-semibold">پروژه تجاری</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">مجتمع تجاری پارس</h3>
-                        <p class="text-gray-600 text-sm mb-3">تهران • 1384</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            تأمین و نصب کامل سیستم‌های ایمنی و تجهیزات سازه‌ای برای مجتمع 1۰ طبقه
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <div class="text-4xl mb-2">🏭</div>
-                            <p class="font-semibold">پروژه صنعتی</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">شهربازی بم </h3>
-                        <p class="text-gray-600 text-sm mb-3">استان کرمان • 1385</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            طراحی و اجرای سوله ها و سیستم‌های ایمنی صنعتی و تجهیزات حفاظتی شهربازی
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <div class="text-4xl mb-2">🏠</div>
-                            <p class="font-semibold">پروژه مسکونی</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">مجموعه مسکونی نیاوران</h3>
-                        <p class="text-gray-600 text-sm mb-3">تهران • ۱۳۹۹</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            ساخت و تأمین تجهیزات ایمنی و سازه‌ای برای ۵ ساختمان مسکونی 8 طبقه
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">خدمات ایمن پایا</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl text-white">🦺</span>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-3">علائم و تجهیزات ایمنی ترافیک</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        تأمین کامل تجهیزات ایمنی ترافیک و سیستم های ایمنی ریلی
-                    </p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl text-white">🏗️</span>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-3">تجهیزات سازه‌ای</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        ساخت انواع تجهیزات سازه‌ای، پلهای عابرپیاده، و ماشین‌آلات ریلی و ساختمانی
-                    </p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl text-white">🔧</span>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-3">نصب و راه‌اندازی</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        خدمات نصب، راه‌اندازی و تعمیر تجهیزات توسط تیم متخصص
-                    </p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl text-white">📋</span>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-3">مشاوره تخصصی</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        ارائه مشاوره فنی و طراحی سیستم‌های ایمنی مطابق استانداردهای ملی
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Regulations Section -->
-    <section id="regulations" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">مقررات و آیین‌نامه‌ها</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-blue-50 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">استانداردهای ملی ساختمان</h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start">
-                            <span class="text-blue-600 ml-2">•</span>
-                            مقررات ملی ساختمان ایران (نشریه ۱۹)
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-600 ml-2">•</span>
-                            آیین‌نامه طراحی ساختمان‌ها در برابر زلزله (استاندارد ۲۸۰۰)
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-600 ml-2">•</span>
-                            مقررات ایمنی و بهداشت کار
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-green-50 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">سازمان‌های نظارتی</h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start">
-                            <span class="text-green-600 ml-2">•</span>
-                            وزارت راه و شهرسازی
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-600 ml-2">•</span>
-                            سازمان نظام مهندسی ساختمان
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-600 ml-2">•</span>
-                            اداره کل تعاون، کار و رفاه اجتماعی
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="mt-12 text-center">
-                <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
-                    دانلود فایل‌های مقررات
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">تماس با ما</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">اطلاعات تماس</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center ml-4">
-                                <span class="text-white text-xl">📍</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">آدرس دفتر مرکزی</h4>
-                                <p class="text-gray-600">تهران، خیابان فاطمی-روبروی هتل لاله-خیابان باباطاهر-کوچه فاطمی، پلاک 26 طبقه همکف </p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center ml-4">
-                                <span class="text-white text-xl">📞</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">تلفن تماس</h4>
-                                <p class="text-gray-600"> ۰۲۱-  88971158 </p>
-                                <p class="text-gray-600">0912-2069126</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center ml-4">
-                                <span class="text-white text-xl">✉️</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">ایمیل</h4>
-                                <p class="text-gray-600">info@imenpaya.ir</p>
-                                <p class="text-gray-600">amirrouhi@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-8">
-                        <h4 class="font-semibold text-gray-900 mb-4">لینک‌های سازمان‌های مرتبط</h4>
-                        <div class="space-y-2">
-                            <a href="#" class="block text-blue-600 hover:text-blue-800 transition duration-300">
-                                وزارت راه و شهرسازی - نظارت بر پروژه‌های عمرانی
-                            </a>
-                            <a href="#" class="block text-blue-600 hover:text-blue-800 transition duration-300">
-                                سازمان نظام مهندسی - صدور مجوزهای فنی
-                            </a>
-                            <a href="#" class="block text-blue-600 hover:text-blue-800 transition duration-300">
-                                شهرداری تهران - مقررات شهری
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-lg p-8">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">فرم تماس</h3>
-                    <form id="contactForm" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">نام و نام خانوادگی</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">ایمیل</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        </div>
-                        
-                        <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">موضوع</label>
-                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">پیام</label>
-                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
-                            ارسال پیام
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center ml-3">
-                            <span class="text-white font-bold text-lg">ایپ</span>
-                        </div>
-                        <h3 class="text-xl font-semibold">ایمن پایا</h3>
-                    </div>
-                    <p class="text-gray-400 leading-relaxed">
-                        شرکت تجهیزات سازه و ایمنی ایمن پایا، ارائه دهنده راه‌حل‌های جامع در صنعت ساختمان
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">خدمات</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>اجرای ساختمان ها</li>
-                        <li>تولید تجهیزات سازه‌ای</li>
-                        <li>ساخت و نصب و راه‌اندازی</li>
-                        <li>مشاوره تخصصی</li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">تماس سریع</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>📞 021-88971158 </li>
-                        <li>✉️ info@imenpaya.ir</li>
-                        <li>📍 تهران، خیابان فاطمی-روبروی هتل لاله-خیابان باباطاهر-کوچه فاطمی، پلاک 26 طبقه همکف </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; ۱۴۰۳ شرکت ایمن پایا. تمامی حقوق محفوظ است.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Language switching functionality
-        const languageSelector = document.getElementById('languageSelector');
-        const body = document.body;
-        const html = document.documentElement;
-        
-        const translations = {
-            fa: {
-                dir: 'rtl',
-                lang: 'fa',
-                title: 'شرکت تجهیزات سازه و ایمنی ایمن پایا'
-            },
-            en: {
-                dir: 'ltr',
-                lang: 'en',
-                title: 'Imen Paya Construction Safety Equipment Company'
-            },
-            es: {
-                dir: 'ltr',
-                lang: 'es',
-                title: 'Empresa de Equipos de Seguridad Imen Paya'
-            },
-            ar: {
-                dir: 'rtl',
-                lang: 'ar',
-                title: 'شركة إيمن بايا لمعدات السلامة والإنشاءات'
-            }
-        };
-        
-        languageSelector.addEventListener('change', function() {
-            const selectedLang = this.value;
-            const translation = translations[selectedLang];
-            
-            html.setAttribute('lang', translation.lang);
-            html.setAttribute('dir', translation.dir);
-            body.setAttribute('dir', translation.dir);
-            document.title = translation.title;
-            
-            // Add font class based on language
-            body.className = body.className.replace(/font-(vazir|inter)/g, '');
-            if (selectedLang === 'fa' || selectedLang === 'ar') {
-                body.classList.add('font-vazir');
-            } else {
-                body.classList.add('font-inter');
-            }
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-        
-        // Contact form handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
-            
-            // Simple validation
-            if (!name || !email || !subject || !message) {
-                alert('لطفاً تمام فیلدها را پر کنید');
-                return;
-            }
-            
-            // Simulate form submission
-            alert('پیام شما با موفقیت ارسال شد. در اسرع وقت با شما تماس خواهیم گرفت.');
-            this.reset();
-        });
-        
-        // Add scroll effect to navigation
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                nav.classList.add('shadow-xl');
-            } else {
-                nav.classList.remove('shadow-xl');
-            }
-        });
-        
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-        
-        // Observe all sections
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-    </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9665f503d313c4d8',t:'MTc1MzcyMjI4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-</html>
